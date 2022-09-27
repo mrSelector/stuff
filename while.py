@@ -1,12 +1,12 @@
-# x = int(input('Enter number: '))
-# count = 0
-# y = 1
-# while count < x:
-#     count += 1
-#     y = y * count
-#     print(y)
-# else:
-#     print(y)
+x = int(input('Enter number: '))
+count = 0
+y = 1
+while count < x:
+    count += 1
+    y = y * count
+    print(y)
+else:
+    print(y)
 
 
 x = ''
