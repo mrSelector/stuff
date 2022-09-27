@@ -21,7 +21,7 @@ class AccountingInterface:
         return salary
 
 
-db = {'Ivan':'A', 'Olya': 'B', "Pashko": 'C'}
+db = {'Ivan': 'A', 'Olya': 'B', "Pashko": 'C'}
 interface = AccountingInterface(db)
 res = interface.get_salary('Olya')
 print('Salary Olya:', res)
