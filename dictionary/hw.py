@@ -8,6 +8,5 @@ print(matrix)
 
 flatten_matrix = [val for sublist in matrix for val in sublist]
 print(flatten_matrix)
-# for i in matrix:
-#     print(i)   
-.
+for i in matrix:
+    print(i)
