@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf8'?>
+<coordinate>
+    <record>
+        <x>10</x>
+        <y>20</y>
+        <c>30</c>
+    </record>
+    <record>
+        <x>11</x>
+        <y>21</y>
+        <c>31</c>
+    </record>
+    <record>
+        <x>12</x>
+        <y>22</y>
+        <c>32</c>
+    </record>
+    <record>
+        <x>13</x>
+        <y>23</y>
+        <c>33</c>
+    </record>
+</coordinate>

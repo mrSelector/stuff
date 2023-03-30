@@ -9,19 +9,19 @@ options = {
 print(2, 3, **options)
 print()
 
-# gen = [2 ** i for i in range(1, 11)]
-# print(gen)
-#
-#
-# class NW(list):
-#     def __getitem__(self, item):
-#         if item > 0:
-#             return super().__getitem__(item - 1)
-#         elif item == 0:
-#             raise IndexError('List index out of range')
-#         elif item < 0:
-#             return super().__getitem__(item)
-#
-#
-# nw = NW(gen)
-# print(nw[0])
+gen = [2 ** i for i in range(1, 11)]
+print(gen)
+
+
+class NW(list):
+    def __getitem__(self, item):
+        if item > 0:
+            return super().__getitem__(item - 1)
+        elif item == 0:
+            raise IndexError('List index out of range')
+        elif item < 0:
+            return super().__getitem__(item)
+
+
+nw = NW(gen)
+print(nw[1])
