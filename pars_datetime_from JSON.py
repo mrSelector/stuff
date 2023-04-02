@@ -17,4 +17,4 @@ for key, value in data.items():
     if processor is not None:
         new_value = processor(value)
         new_date[key] = new_value
-print(new_date)
+print(new_date['date'])

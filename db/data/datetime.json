@@ -1,0 +1,12 @@
+{
+    "string": "hello world",
+    "integer": 5,
+    "lst": [
+        "thinkpad",
+        "apple"
+    ],
+    "birthday": {
+        "value": "02/04/23 22:25:32",
+        "__datetime__": true
+    }
+}

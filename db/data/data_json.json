@@ -1,0 +1,7 @@
+{
+    "string": "hello world",
+    "integer": 5,
+    "lst": [
+        "thinkpad",
+        "apple"
+    ]}
