@@ -6,7 +6,11 @@
         "apple"
     ],
     "birthday": {
-        "value": "02/04/23 22:25:32",
+        "value": "03/04/23 22:01:45",
         "__datetime__": true
+    },
+    "date": {
+        "value": "15/01/88",
+        "__date__": true
     }
 }

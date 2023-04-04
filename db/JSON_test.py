@@ -5,7 +5,8 @@ data = {
     'string': 'hello world',
     'integer': 5,
     'lst': ['thinkpad', 'apple'],
-    'birthday': datetime.datetime.now()
+    'birthday': datetime.datetime.now(),
+    'date': datetime.date(1988, 1, 15)
 }
 
 
@@ -40,7 +41,7 @@ def as_datetime(dct):
     if '__datetime__' in dct:
         return datetime.datetime.strptime(dct['value'], '%d/%m/%y %H:%M:%S')
     if '__date__' in dct:
-        return datetime.datetime.strptime(dct["value"], '%d/%m/%y')
+        return datetime.datetime.strptime(dct["value"], '%d/%m/%y').date()
     return dct
 
 
