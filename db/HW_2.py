@@ -4,6 +4,10 @@
 запросы и добавляя новые элементы, если потребуется."""
 from xml.etree import ElementTree
 
-tree = ElementTree.parse('data/users.xml')
+tree = ElementTree.parse('data/some.xml')
+root = tree.getroot()
 
-print(tree)
+for i in root:
+    print(i.attrib.get('car'))
+    for j in i:
+        print(f"{j.tag}----> {j.text}")

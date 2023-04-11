@@ -13,6 +13,7 @@ dct2 = {'Dog': "Ice",
         'hobby': 'event'
         }
 data = dct1, dct2
+
 with open('stuff.json', 'w') as file:
     json.dump(data, file, indent=4)
 

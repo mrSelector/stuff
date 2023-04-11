@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <at_zf car="bmw">
+        <model>4hp20</model>
+        <atf>fuchs4000</atf>
+    </at_zf>
+    <at_aisin car="toyota">
+        <model>03-42LE</model>
+        <atf>dextron_2D</atf>
+    </at_aisin>
+</data>
