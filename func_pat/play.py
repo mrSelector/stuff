@@ -26,3 +26,6 @@ print(positive)
 
 product = reduce(lambda x, y: x * y, positive)
 print(product)
+
+print((lambda x:-x)(5))
+print(str(True))

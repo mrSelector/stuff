@@ -26,3 +26,4 @@ with open('data/dialect_HW.csv', "r") as file:
     data = file.read()
     dialect = sniffer.sniff(data)
     print(f'delimiter----> {dialect.delimiter} \nquotechar----> {dialect.quotechar}')
+ 
