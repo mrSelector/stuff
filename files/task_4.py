@@ -4,21 +4,31 @@
 import sqlite3
 import json
 
-connect = sqlite3.connect('data/materials.db')
-#connect = sqlite3.connect(':memory:')
 
-connect.execute(""" CREATE TABLE "materials"
+def adapt_json(list_data):
+    return json.dumps(list_data)
+
+
+def convert_json(raw):
+    return json.loads(raw)
+
+
+sqlite3.register_adapter(list, adapt_json)
+sqlite3.register_converter('json', convert_json)
+connect = sqlite3.connect('data/materials.db', detect_types=sqlite3.PARSE_DECLTYPES)
+# connect = sqlite3.connect(':memory:', detect_types=sqlite3.PARSE_DECLTYPES)
+cursor = connect.cursor()
+
+cursor.execute(""" CREATE TABLE materials
                     (id INTEGER PRIMARY KEY,
                      weight REAL,
                      height REAL,
                      additional_info TEXT
-                     )""")
+                     );""")
 
-mat = {'id': 1, 'weight': 72, 'height': 186, 'add': [('color', 'white'), ('steel', 'titan')]}
-json_data = json.dumps(mat.get('add', 'empty'))
-connect.execute("""INSERT INTO materials VALUES (?,?,?,?)""", (1, mat['weight'], mat['height'], json_data))
+cursor.execute("""INSERT INTO materials VALUES (?,?,?,?)""",
+               (1, 234, 453, [('color', 'white'), ('steel', 'titan')]))
 
 connect.commit()
-data = connect.execute('SELECT * FROM "materials"').fetchall()
+data = cursor.execute('SELECT * FROM "materials"').fetchall()
 print(data)
-

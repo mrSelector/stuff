@@ -1,0 +1,16 @@
+[
+  {
+    "car_brand": "Honda",
+    "model": "Accord_euroR",
+    "year": 2004,
+    "engine": 2.0,
+    "power": "220hp"
+  },
+  {
+    "car_brand": "Honda",
+    "model": "integra_TypeR",
+    "year": 1997,
+    "engine": 1.8,
+    "power": "200hp"
+  }
+]
